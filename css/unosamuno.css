@@ -1,0 +1,99 @@
+body { 	
+	background-color: #192f47;
+}
+
+nav {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px;
+}
+p {
+	color: white;
+	font-family: Arial;
+	font-size: 16px;
+	text-align: left;
+}
+
+a {
+	color: white;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+h2 {
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	color: white;
+	font-size: 18px;
+}
+
+#quote {
+	font-style: italic;
+	text-align: center;
+	color: white;
+}
+
+#author {
+	text-align: right;
+	color: white;
+	font-size: 12px;
+	font-style: normal;
+}
+
+fieldset {
+	color: white;
+}
+
+legend {
+	display: block;
+	padding-left: 2px;
+	padding-right: 2px;
+	border: none;
+	align-self: right;
+  }
+
+label {
+	text-align: left;
+}
+
+input {
+	align-self: right;
+}
+
+#send {
+	font-weight: bold;
+}
+
+canvas {
+	border: 3px solid;
+	border-color: black;
+	background-color: #404040;
+	width: 100%;
+	max-width: 400px;
+}
+
+footer {
+	background-color: black; 
+	color: white;
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.links li {
+	display: inline-block;
+	margin: 0 0.5em;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+}
