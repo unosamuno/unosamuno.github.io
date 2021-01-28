@@ -13,16 +13,16 @@
 <body>
     <header class="w3-container w3-black w3-center">
         <nav class="w3-bar w3-black w3-center">
-            <a href="#information" class="w3-bar-item w3-button w3-round w3-hide-small">Information</a>
+            <a href="#information" class="w3-bar-item w3-button w3-round w3-hide-small">About</a>
             <a href="#mix" class="w3-bar-item w3-button w3-round w3-hide-small">Music Mix</a>
-            <a href="#form" class="w3-bar-item w3-round w3-button w3-hide-small">Booking and Contact</a>
+            <a href="#form" class="w3-bar-item w3-round w3-button w3-hide-small">Contact</a>
             <a href="#ref" class="w3-bar-item w3-button w3-round w3-hide-small">Links</a>
             <button class="w3-bar-item w3-button w3-left w3-round w3-hide-large w3-hide-medium"
                 onclick="document.getElementById('sub').classList.toggle('w3-hide');"> &#x2630;</button>
         </nav>
         <div id="sub" class="w3-bar-block w3-hide">
-            <a href="#information" class="w3-bar-item w3-button w3-round w3-mobile">Information</a>
-            <a href="#form" class="w3-bar-item w3-button w3-round w3-mobile">Booking and Contact</a>
+            <a href="#information" class="w3-bar-item w3-button w3-round w3-mobile">About</a>
+            <a href="#form" class="w3-bar-item w3-button w3-round w3-mobile">Contact</a>
             <a href="#mix" class="w3-bar-item w3-button w3-round w3-mobile">Music Mix</a>
             <a href="#ref" class="w3-bar-item w3-button w3-round w3-mobile">Links</a>
         </div>
@@ -33,34 +33,30 @@
     <div class="w3-container">
         <div class="w3-row">
             <div class="w3-col l4 w3-display-container w3-center">
-                    <img src="img/uno.jpg" alt="picture of me" width="500" height="500" class="w3-image w3-round">
-                    <div class="w3-display-topmiddle w3-container w3-small w3-round w3-black">This is me</div>
+                <img src="img/uno.jpg" alt="picture of me" width="500" height="500" class="w3-image w3-round">
+                <div class="w3-display-topmiddle w3-container w3-small w3-round w3-black">This is me</div>
             </div>
             <!-- information on how to use this website -->
             <div id="information" class="w3-col l4">
                 <div class="w3-margin">
                     <h2>About</h2>
-                    <p>I like to mix tracks and songs. In the section <a href="#mix">mix</a> you'll find my most recent
+                    <p>I study Digital Engineering at Lucerne's University of Applied Sciences.</p>
+                    <p>Besides coding in various languages I like to mix tracks and songs. In the section <a
+                            href="#mix">mix</a> you'll find my most recent
                         music mix.</p>
-                    <p>If you want to book me you can fill in the <a href="#form">contactform</a> and I'll get back to
-                        you asap.</p>
-                    <p>My hourly fee is CHF 200. If you fill in the form, you can calculate the approximate booking fee
-                        first.
-                        For additional CHF 100, I can bring my standard equipment with me, which includes two pioneer
-                        XDJs,
-                        a standard mixer with two audio out and two monitoring boxes.
-                        If you do not have at least this minimum standard, check the box in the form.</p>
+                    <p>You can <a href="#form">contact</a> me and I'll answer asap.</p>
                     <p>In the footnote you'll find the <a href="#ref">links</a> to my cloudstreams and my social media.
                     </p>
                     <div class="w3-center w3-display-container w3-center">
-                        <img src="img/moreAmore.jpeg" alt="moreAmore" width="300" height="150" class="w3-image w3-round">
+                        <img src="img/moreAmore.jpeg" alt="moreAmore" width="300" height="150"
+                            class="w3-image w3-round">
                         <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">My Motto</div>
                     </div>
                 </div>
             </div>
             <div class="w3-col l4 w3-display-container w3-center">
-                    <img src="img/DJstation.JPG" alt="DJstation" width="500" height="500" class="w3-image w3-round">
-                    <div class="w3-display-topmiddle w3-container w3-small w3-round w3-black">My DJ-station</div>
+                <img src="img/DJstation.JPG" alt="DJstation" width="500" height="500" class="w3-image w3-round">
+                <div class="w3-display-topmiddle w3-container w3-small w3-round w3-black">My setup</div>
             </div>
         </div>
     </div>
@@ -80,7 +76,7 @@
                     <canvas id="canvas" width="500" height="400"></canvas>
                     <br>
                     <!-- audio is in the lowest quality possible, to reduce file size -->
-                    <audio id="mymix" controls="" type="audio/mpeg" src="/WEBT_HS20_Huser_Samu/audio/uno1.mp3"></audio>
+                    <audio id="mymix" controls="" type="audio/mpeg" src="audio/uno1.mp3"></audio>
                     <script src="./js/recordPlayer.js"></script>
                 </div>
             </div>
@@ -90,7 +86,7 @@
     <hr>
 
     <div id="form">
-        <h2>Booking form and contact</h2>
+        <h2>Contact</h2>
         <div id="main" class="w3-container">
             <div class="w3-row w3-margin">
                 <!-- first quarter, empty container -->
@@ -99,54 +95,9 @@
                 <div class="w3-col l4">
                     <form name="contactform" method="POST" action="unosamuno.php">
                         <fieldset class="w3-box w3-margin">
-                            <legend><strong>Form</strong></legend>
-                            <label for="name">Name / Host: *</label><br>
+                            <legend><strong>You</strong></legend>
+                            <label for="name">Name: *</label><br>
                             <input class="w3-round" name="name" v-model="name" /><br>
-                            <br>
-                            <label for="email">Email: *</label><br>
-                            <input class="w3-round" name="email" id="email" type="email"
-                                placeholder="example@email.com" /><br>
-                            <br>
-                            <fieldset class="w3-box">
-                                <!-- Booking Fee Calculation -->
-                                <legend for="bookingfee"><strong>Booking fee calculation</strong></legend>
-                                <label for="date">Booking date: *</label><br>
-                                <input class="w3-round" oninput="isValidDate()" v-model="date" type="date"
-                                    id="bookingdate"></input><br>
-                                <br>
-                                <label for="eventtype">Event type: *</label><br>
-                                <select class="w3-round" v-model="eventtype" name="eventtype" id="eventtype">
-                                    <option disabled value="">Please select an eventtype</option>
-                                    <option v-bind:value="{ type: 'party' }" value="party">Party</option>
-                                    <option v-bind:value="{ type: 'wedding' }" value="wedding">Wedding</option>
-                                    <option v-bind:value="{ type: 'company' }" value="company">Corporate event</option>
-                                    <option v-bind:value="{ type: 'other' }" value="other">Other</option>
-                                </select><br>
-                                <br>
-                                <label for="time">Amount of hours: *</label><br>
-                                <select class="w3-round" v-model="hours" name="hours" id="hours">
-                                    <option disabled value="">Please select amount of hours</option>
-                                    <option value="1">1 hour</option>
-                                    <option value="2">2 hours</option>
-                                    <option value="3">3 hours</option>
-                                    <option value="4">4 hours</option>
-                                </select>
-                                <br>
-                                <br>
-                                <label for="equipment">Audio equipment required:</label><br>
-                                <input class="w3-round" type="checkbox" v-model="equipment" true-value="yes"
-                                    false-value="no" name="equipment"> Yes</input><br>
-                                <br>
-                                <input class="w3-right w3-button w3-aqua w3-round-xlarge" name="booking" type="submit"
-                                    value="Calculate booking fee" />
-                            </fieldset><br>
-
-                            <label for="message">Further comments:</label>
-                            <br>
-                            <textarea rows="4" type="text" cols="25" name="message"></textarea><br>
-                            <input class="w3-right w3-button w3-aqua w3-round-xlarge w3-padding-large" id="send" type="submit"
-                                name="send" value="Send" />
-                            <br>
                             <br>
                         </fieldset>
                         <br>
@@ -155,7 +106,7 @@
                 <!-- third quarter, the reaction to the form with vue.js -->
                 <div class="w3-col l4">
                     <fieldset class="w3-box w3-margin">
-                        <legend><strong>Contact</strong></legend>
+                        <legend><strong>Me</strong></legend>
                         <div class="w3-col">
                             <h3 v-if="name" class="w3-left">
                                 Hello {{ name }}
@@ -165,27 +116,14 @@
                                 Old age should burn and rave at close of day;<br>
                                 Rage, rage against the dying of the light.<br>
                                 <span id="author" v-if="name" class="w3-right"> – Dylan Thomas (1914 - 1953)</span>
+                                <br>
                             </p>
-                        </div>
-                        <div class="w3-col">
-                            <fieldset class="w3-box w3-margin">
-                                <legend><strong>Booking</strong></legend>
-                                <p>
-                                    <span v-if="date">You expect me to play on {{ date }}</span>
-                                    <span v-show="date !== ''">, which is a {{ weekday }}.</span><br>
-                                    <span v-if="eventtype">You want to book me for </span>
-                                    <span v-if="eventtype.type === 'party'">a specific celebration.</span>
-                                    <span v-else-if="eventtype.type === 'wedding'">a wedding ball.</span>
-                                    <span v-else-if="eventtype.type === 'company'">some social get-together cocktail
-                                        party.</span>
-                                    <span v-else-if="eventtype.type === 'other'">some other laid-back festivity.</span>
-                                    <br>
-                                    <span v-if="hours">I will play for {{ hours }}h.</span>
-                                    <br>
-                                    <span v-if="equipment === 'yes'"> I'll bring my equipment.</span>
-                                    <span v-else-if="equipment === 'no'"> You will bring your equipment.</span>
-                                </p>
-                            </fieldset>
+                            <br>
+                            <br>
+                            <br>
+                            <h3 v-if="name" class="w3-left w3-center">
+                                <td>Send <a title="email" href="mailto:samuelhuser@gmail.com">Email</a><span style="font-size: 25px;"> &#9993;</span></td>
+                            </h3>
                         </div>
                     </fieldset>
                 </div>
