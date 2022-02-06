@@ -14,43 +14,41 @@
     <header class="w3-container w3-black w3-center">
         <nav class="w3-bar w3-black w3-center">
             <a href="#information" class="w3-bar-item w3-button w3-round w3-hide-small">About</a>
-            <a href="#mix" class="w3-bar-item w3-button w3-round w3-hide-small">Music Mix</a>
-            <a href="#form" class="w3-bar-item w3-round w3-button w3-hide-small">Contact</a>
-            <a href="#ref" class="w3-bar-item w3-button w3-round w3-hide-small">Links</a>
+            <a href="#mix" class="w3-bar-item w3-button w3-round w3-hide-small">Mix</a>
+            <a href="#form" class="w3-bar-item w3-round w3-button w3-hide-small">Kontakt</a>
+            <a href="#ref" class="w3-bar-item w3-button w3-round w3-hide-small">Linggs</a>
             <button class="w3-bar-item w3-button w3-left w3-round w3-hide-large w3-hide-medium"
                 onclick="document.getElementById('sub').classList.toggle('w3-hide');"> &#x2630;</button>
         </nav>
         <div id="sub" class="w3-bar-block w3-hide">
             <a href="#information" class="w3-bar-item w3-button w3-round w3-mobile">About</a>
-            <a href="#form" class="w3-bar-item w3-button w3-round w3-mobile">Contact</a>
-            <a href="#mix" class="w3-bar-item w3-button w3-round w3-mobile">Music Mix</a>
-            <a href="#ref" class="w3-bar-item w3-button w3-round w3-mobile">Links</a>
+            <a href="#mix" class="w3-bar-item w3-button w3-round w3-mobile">Mix</a>
+            <a href="#form" class="w3-bar-item w3-button w3-round w3-mobile">Kontakt</a>
+            <a href="#ref" class="w3-bar-item w3-button w3-round w3-mobile">Linggs</a>
         </div>
     </header>
 
-    <h1>Ciao!<br>Welcome to the personal site of unosamuno.</h1>
+    <h1>ciao!<br></h1>
     <hr>
     <div class="w3-container">
-        <div class="w3-row">
+        <div class="w3-row w3-black">
             <div class="w3-col l4 w3-display-container w3-center">
                 <img src="img/uno.jpg" alt="picture of me" width="500" height="500" class="w3-image w3-round">
-                <div class="w3-display-topmiddle w3-container w3-small w3-round w3-black">This is me</div>
+                <div class="w3-display-topmiddle w3-container w3-small w3-round w3-black">unosamuno</div>
             </div>
             <!-- information on how to use this website -->
             <div id="information" class="w3-col l4">
-                <div class="w3-margin">
-                    <h2>About</h2>
-                    <p>I study Digital Engineering at Lucerne's University of Applied Sciences.</p>
-                    <p>Besides coding in various languages I like to mix tracks and songs. In the section <a
-                            href="#mix">mix</a> you'll find my most recent
-                        music mix.</p>
-                    <p>You can <a href="#form">contact</a> me and I'll answer asap.</p>
-                    <p>In the footnote you'll find the <a href="#ref">links</a> to my cloudstreams and my social media.
+                <div class="w3-margin" style="color: black;">
+                    <h2></h2>
+                    <p>sono unosamuno</p>
+                    <p>Studying Digital Engineering at Lucerne's University of Applied Sciences.</p>
+                    <p><a href="#form">contact</a></p>
+                    <p><a href="#ref">linggs</a>
                     </p>
                     <div class="w3-center w3-display-container w3-center">
                         <img src="img/moreAmore.jpeg" alt="moreAmore" width="300" height="150"
                             class="w3-image w3-round">
-                        <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">My Motto</div>
+                        <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">motto</div>
                     </div>
                 </div>
             </div>
@@ -65,10 +63,10 @@
 
     <!-- canvas with vinyl player and audio -->
     <div class="w3-container" id="mix">
-        <div class="w3-row">
+        <div class="w3-row w3-black">
             <div class="w3-col">
                 <div class="w3-margin w3-center">
-                    <h2>Music mix</h2>
+                    <h2 style="color: black;">Music mix</h2>
                     <button class="w3-button w3-green w3-round-xlarge" id="on" onclick="playAudio()">PLAY</button>
                     <button class="w3-button w3-purple w3-round-xlarge" id="off" onclick="pauseAudio()">PAUSE</button>
                     <br>
@@ -85,8 +83,8 @@
 
     <hr>
 
-    <div id="form">
-        <h2>Contact</h2>
+    <div class="w3-white "id="form">
+        <h2 style="color: black;">Kontakt</h2>
         <div id="main" class="w3-container">
             <div class="w3-row w3-margin">
                 <!-- first quarter, empty container -->
@@ -122,7 +120,8 @@
                             <br>
                             <br>
                             <h3 v-if="name" class="w3-left w3-center">
-                                <td>Send <a title="email" href="mailto:samuelhuser@gmail.com">Email</a><span style="font-size: 25px;"> &#9993;</span></td>
+                                <td>Send <a title="email" href="mailto:samuelhuser@gmail.com">Email</a><span
+                                        style="font-size: 25px;"> &#9993;</span></td>
                             </h3>
                         </div>
                     </fieldset>

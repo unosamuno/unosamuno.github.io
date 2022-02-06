@@ -1,5 +1,5 @@
 body { 	
-	background-color: #192f47;
+	background-color: #ffff;
 }
 
 nav {
@@ -27,7 +27,7 @@ h1 {
 h2 {
 	font-size: 30px;
 	text-align: center;
-	color: white;
+	color:black;
 }
 
 h3 {
