@@ -1,4 +1,4 @@
-body { 	
+body {
 	background-color: rgb(255, 255, 255);
 }
 
@@ -8,6 +8,7 @@ nav {
 	font-weight: bold;
 	padding: 20px;
 }
+
 p {
 	color: white;
 	font-family: Arial;
@@ -24,15 +25,27 @@ h1 {
 	text-align: center;
 	color: rgb(0, 0, 0);
 }
+
 h2 {
-	font-size: 30px;
+	font-size: 25px;
 	text-align: center;
-	color:rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 h3 {
 	color: white;
 	font-size: 18px;
+}
+
+h4 {
+	color: blueviolet;
+	font-size: xx-small;
+}
+
+h5 {
+	color: green;
+	font-size: 16px;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 #quote {
@@ -58,7 +71,7 @@ legend {
 	padding-right: 2px;
 	border: none;
 	align-self: right;
-  }
+}
 
 label {
 	text-align: left;
@@ -73,6 +86,8 @@ input {
 }
 
 canvas {
+	display: block;
+	margin: 0 auto;
 	border: 3px solid;
 	border-color: black;
 	background-color: #404040;
@@ -81,9 +96,9 @@ canvas {
 }
 
 footer {
-	background-color: black; 
+	background-color: black;
 	color: white;
-	list-style-type: none;
+	list-style-type: unset;
 	text-align: center;
 	margin: 0;
 	padding: 0;
@@ -96,4 +111,17 @@ footer {
 	font-weight: bold;
 	padding: 20px;
 	text-align: center;
+}
+
+.w3-small-image {
+	width: 200px;
+	/* Adjust the width as needed */
+	height: auto;
+	/* This will maintain the aspect ratio */
+}
+
+.w3-small-image-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

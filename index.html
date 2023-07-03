@@ -13,8 +13,8 @@
 <body>
     <header class="w3-container w3-black w3-center">
         <nav class="w3-bar w3-black w3-center">
-            <a href="#information" class="w3-bar-item w3-button w3-round w3-hide-small">about</a>
-            <a href="#mix" class="w3-bar-item w3-button w3-round w3-hide-small">mix</a>
+            <!--  <a href="#information" class="w3-bar-item w3-button w3-round w3-hide-small">about</a>
+            <a href="#mix" class="w3-bar-item w3-button w3-round w3-hide-small">mix</a> -->
             <a href="#form" class="w3-bar-item w3-round w3-button w3-hide-small">contact</a>
             <a href="#ref" class="w3-bar-item w3-button w3-round w3-hide-small">links</a>
             <button class="w3-bar-item w3-button w3-left w3-round w3-hide-large w3-hide-medium"
@@ -23,137 +23,154 @@
         <div id="sub" class="w3-bar-block w3-hide">
             <a href="#information" class="w3-bar-item w3-button w3-round w3-mobile">about</a>
             <a href="#mix" class="w3-bar-item w3-button w3-round w3-mobile">mix</a>
-            <a href="#form" class="w3-bar-item w3-button w3-round w3-mobile">contact</a>
+            <a href="#form" class="w3-bar-item w3-button w3-round w3-mobile">contatto</a>
             <a href="#ref" class="w3-bar-item w3-button w3-round w3-mobile">links</a>
         </div>
     </header>
 
     <h1>ciao!<br></h1>
-    <hr>
+
     <div class="w3-container">
-        <div class="w3-row w3-black">
-            <div class="w3-col l4 w3-display-container w3-center">
-                <img src="img/uno.jpg" alt="picture of me" width="500" height="500" class="w3-image w3-round">
-                <div class="w3-display-topmiddle w3-container w3-small w3-round w3-black">unosamuno</div>
+        <div class="w3-row w3-black w3-center">
+            <div class="w3-col l4">
+                <div
+                    class="w3-display-container w3-margin-bottom w3-margin-left w3-margin-top w3-center w3-small-image-container">
+                    <img src="img/unosamuno.jpg" alt="picture of me" width="900px" height="900px"
+                        class="w3-image w3-margin-top w3-left">
+                    <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">unosamuno</div>
+                </div>
             </div>
-            <!-- information on how to use this website -->
-            <div id="information" class="w3-col l4">
+
+            <div id="information" class="w3-col l4 w3-display-container">
                 <div class="w3-margin" style="color: black;">
-                    <h2></h2>
-                    <p>sono unosamuno</p>
-                    <p>Studying Digital Engineering at Lucerne's University of Applied Sciences.</p>
-                    <p><a href="#form">kontakt</a></p>
-                    <p><a href="#ref">links</a>
-                    </p>
-                    <div class="w3-center w3-display-container w3-center">
-                        <img src="img/moreAmore.jpeg" alt="moreAmore" width="300" height="150"
-                            class="w3-image w3-round">
-                        <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">motto</div>
+                    <h5 class="w3-center">sono unosamuno</h5>
+                    <br>
+                    <h5 class="w3-center">Digital Engineer</h5>
+                    <br><br><br><br><br><br><br><br><br>
+                    <div class="w3-center w3-display-container">
+                        <img src="img/moreAmore.jpeg" alt="moreAmore" class="w3-small-image w3-round">
+                        <!-- <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">motto</div> -->
                     </div>
                 </div>
             </div>
-            <div class="w3-col l4 w3-display-container w3-center">
-                <img src="img/DJstation.JPG" alt="DJstation" width="500" height="500" class="w3-image w3-round">
-                <div class="w3-display-topmiddle w3-container w3-small w3-round w3-black">setup</div>
-            </div>
-        </div>
-    </div>
 
-    <hr>
-
-    <!-- canvas with vinyl player and audio -->
-    <div class="w3-container" id="mix">
-        <div class="w3-row w3-black">
-            <div class="w3-col">
-                <div class="w3-margin w3-center">
-                    <h2 style="color: rgb(255, 255, 255);">music mix</h2>
-                    <button class="w3-button w3-green w3-round-xlarge" id="on" onclick="playAudio()">PLAY</button>
-                    <button class="w3-button w3-purple w3-round-xlarge" id="off" onclick="pauseAudio()">PAUSE</button>
-                    <br>
-                    <br>
-                    <canvas id="canvas" width="500" height="400"></canvas>
-                    <br>
-                    <!-- audio is in the lowest quality possible, to reduce file size -->
-                    <audio id="mymix" controls="" type="audio/mpeg" src="audio/uno1.mp3"></audio>
-                    <script src="./js/recordPlayer.js"></script>
+            <div class="w3-col l4 w3-display-container">
+                <div class="w3-display-container">
+                    <img src="img/vallapisina.jpg" alt="casa" width="700" height="700" class="w3-image">
+                    <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">casa</div>
                 </div>
             </div>
         </div>
-    </div>
+        <hr>
 
-    <hr>
-
-    <div class="w3-container" id="form">
-        <div class="w3-row w3-black">
-            <h2 style="color: rgb(255, 255, 255);">kontakt</h2>
-            <div id="main" class="w3-container">
-                <!-- first quarter, empty container -->
-                <div class="w3-col l2 w3-container"></div>
-                <!-- second quarter, the form -->
-                <div class="w3-col l4">
-                    <form name="contactform" method="POST" action="unosamuno.php">
-                        <fieldset class="w3-box w3-margin">
-                            <legend><strong>You</strong></legend>
-                            <label for="name">Name: *</label><br>
-                            <input class="w3-round" name="name" v-model="name" /><br>
-                            <br>
-                        </fieldset>
+        <!-- canvas with vinyl player and audio -->
+        <div class="w3-container w3-row-padding" id="mix">
+            <div class="w3-row w3-center w3-black">
+                <div class="w3-col">
+                    <div class="w3-margin w3-center">
+                        <!-- <h2 style="color: rgb(255, 255, 255);">music</h2> -->
+                        <button class="w3-button w3-green w3-round-xlarge" id="on" onclick="playAudio()">PLAY</button>
+                        <button class="w3-button w3-purple w3-round-xlarge" id="off"
+                            onclick="pauseAudio()">PAUSE</button>
                         <br>
-                    </form>
+                        <br>
+                        <canvas id="canvas" width="500" height="400"></canvas>
+                        <!-- Credit to Valentino Vivace for track -->
+                        <h4>music by Valentino Vivace - Vieni con me</h4>
+                        <audio id="mymix" controls="" type="audio/mpeg"
+                            src="audio/Valentino Vivace - Vieni con me.mp3"></audio>
+                    </div>
                 </div>
-                <!-- third quarter, the reaction to the form with vue.js -->
-                <div class="w3-col l4">
-                    <fieldset class="w3-box w3-margin">
-                        <legend><strong>me</strong></legend>
-                        <div class="w3-col">
-                            <h3 v-if="name" class="w3-left">
-                                Hello {{ name }}
-                            </h3>
-                            <p id="quote" v-if="name" class="w3-right">
-                                ...do not go gentle into that good night,<br>
-                                old age should burn and rave at close of day;<br>
-                                rage, rage against the dying of the light.<br>
-                                <span id="author" v-if="name" class="w3-right"> – Dylan Thomas (1914 - 1953)</span>
-                                <br>
-                            </p>
-                            <br>
-                            <br>
-                            <br>
-                            <h3 v-if="name" class="w3-left w3-center">
-                                <td>Send <a title="email" href="mailto:unosamuno@pm.me">Email</a><span
-                                        style="font-size: 25px;"> &#9993;</span></td>
-                            </h3>
-                        </div>
-                    </fieldset>
-                </div>
-                <!-- fourth quarter, empty container -->
-                <div class="w3-col l4 w3-container"></div>
             </div>
         </div>
-        <script src="js/bookingForm.js"></script>
-    </div>
+        <script src="./js/recordPlayer.js"></script>
 
-    <hr>
+        <hr>
 
-    <!-- footer with links to cloudstreams and social media -->
-    <footer>
-        <div id="ref">
-            <ul class="links">
-                <br>
-                <li><a title="mixcloud" href="https://www.mixcloud.com/unosamuno" rel="noreferrer"
-                        target="_blank">mixcloud</a>
-                </li>
-                <li><a title="soundcloud" href="https://soundcloud.com/unosamuno" rel="noreferrer"
-                        target="_blank">soundcloud</a></li>
-                <li><a title="twitter" href="https://twitter.com/unosamuno" rel="noreferrer" target="_blank">twitter</a>
-                </li>
-                <li><a title="github" href="https://github.com/unosamuno" rel="noreferrer" target="_blank">github</a>
-                </li>
-                <br>
-                <br>
-            </ul>
+        <div class="w3-container" id="form">
+            <div class="w3-row w3-black">
+                <h2 style="color: rgb(255, 255, 255);">contact</h2>
+                <div id="main" class="w3-container">
+                    <!-- first quarter, empty container -->
+                    <div class="w3-col l2 w3-container"></div>
+                    <!-- second quarter, the form -->
+                    <div class="w3-col l4">
+                        <form name="contactform" method="POST" action="unosamuno.php">
+                            <fieldset class="w3-box w3-margin">
+                                <legend class="w3-purple"><strong>you</strong></legend>
+                                <br>
+                                <label for="name">name: *</label><br>
+                                <input class="w3-round" name="name" v-model="name" /><br>
+                                <br>
+                            </fieldset>
+                            <br>
+                        </form>
+                    </div>
+                    <!-- third quarter, the reaction to the form with vue.js -->
+                    <div class="w3-col l4">
+                        <fieldset class="w3-box w3-margin">
+                            <legend class="w3-green"><strong>me</strong></legend>
+                            <div class="w3-col">
+                                <h3 v-if="name" class="w3-left">
+                                    ciao {{ name }}
+                                </h3>
+                                <p id="quote" v-if="name" class="w3-right">
+                                    <br>
+                                    What you do makes a difference,
+                                    <br>
+                                    and you have to decide,
+                                    <br>
+                                    what kind of difference you want to make.
+                                    <br>
+                                    <span id="author" v-if="name" class="w3-right"> – Dr. Jane Goodall</span>
+                                    <br>
+                                </p>
+                                <br><br><br><br><br>
+                                <h3 v-if="name" class="w3-left w3-center">
+                                    <td>Send me an <a title="email" href="mailto:unosamuno@pm.me">Email</a><span
+                                            style="font-size: 25px;"> &#9993;</span></td>
+                                </h3>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <!-- fourth quarter, empty container -->
+                    <div class="w3-col l4 w3-container"></div>
+                </div>
+            </div>
+            <script src="js/bookingForm.js"></script>
         </div>
-    </footer>
+
+        <hr>
+
+        <!-- footer with links to cloudstreams and social media -->
+        <footer class="w3-container w3-black">
+            <div id="ref">
+                <h2>links</h2>
+                <ul class="links">
+                    <li><a title="linkedin" href="https://www.linkedin.com/in/samu-huser-276630158/" rel="noreferrer"
+                            target="_blank">linkedin</a></li>
+                    
+                    <li><a title="hslu"
+                            href="https://www.hslu.ch/de-ch/technik-architektur/studium/bachelor/digital-engineering/"
+                            rel="noreferrer" target="_blank">digital engineer</a>
+                    </li>
+                    <li><a title="github" href="https://github.com/unosamuno" rel="noreferrer"
+                            target="_blank">github</a>
+                    </li>
+                    
+                    <li><a title="mixcloud" href="https://www.mixcloud.com/unosamuno" rel="noreferrer"
+                            target="_blank">mixcloud</a>
+                    </li>
+                    <li><a title="soundcloud" href="https://soundcloud.com/unosamuno" rel="noreferrer"
+                            target="_blank">soundcloud</a></li>
+                    
+                    <li><a title="twitter" href="https://twitter.com/unosamuno" rel="noreferrer"
+                            target="_blank">twitter</a>
+                    </li>
+                </ul>
+                <h4>Powered by unosamuno &copy; 2023</h4>
+            </div>
+        </footer>
 </body>
 
 </html>
