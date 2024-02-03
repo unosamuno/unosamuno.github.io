@@ -1,9 +1,9 @@
 body {
-	background-color: rgb(255, 255, 255);
+	background-color: black;
 }
 
 nav {
-	color: white;
+	color: black;
 	font-size: 16px;
 	font-weight: bold;
 	padding: 20px;
@@ -23,11 +23,11 @@ a {
 h1 {
 	font-size: 40px;
 	text-align: center;
-	color: rgb(0, 0, 0);
+	color: white;
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 24px;
 	text-align: center;
 	color: rgb(255, 255, 255);
 }
@@ -38,12 +38,12 @@ h3 {
 }
 
 h4 {
-	color: blueviolet;
+	color: red;
 	font-size: xx-small;
 }
 
 h5 {
-	color: green;
+	color: white;
 	font-size: 16px;
 	font-family: 'Courier New', Courier, monospace;
 }
@@ -104,7 +104,27 @@ footer {
 	padding: 0;
 }
 
-.links li {
+/* Style for links */
+li {
+	list-style: none; /* Remove default list styles */
+	color: white;
+	display: inline-block;
+  }
+
+  li a {
+	text-decoration: none;
+	color: white; /* Set the color of the links */
+	text-decoration: underline;
+  }
+
+  /* Style for icons */
+  li a i {
+	font-size: 24px;
+	margin-right: 8px; /* Add spacing between the icon and text */
+	color: white;
+	margin-right: 20px; /* Add horizontal spacing between the icon and text */
+  } 
+  .links li {
 	display: inline-block;
 	margin: 0 0.5em;
 	font-size: 16px;
@@ -112,6 +132,7 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
+
 
 .w3-small-image {
 	width: 200px;

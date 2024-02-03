@@ -7,170 +7,79 @@
     <title>unosamuno</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./css/unosamuno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
-    <header class="w3-container w3-black w3-center">
-        <nav class="w3-bar w3-black w3-center">
-            <!--  <a href="#information" class="w3-bar-item w3-button w3-round w3-hide-small">about</a>
-            <a href="#mix" class="w3-bar-item w3-button w3-round w3-hide-small">mix</a> -->
-            <a href="#form" class="w3-bar-item w3-round w3-button w3-hide-small">contact</a>
-            <a href="#ref" class="w3-bar-item w3-button w3-round w3-hide-small">links</a>
-            <button class="w3-bar-item w3-button w3-left w3-round w3-hide-large w3-hide-medium"
-                onclick="document.getElementById('sub').classList.toggle('w3-hide');"> &#x2630;</button>
-        </nav>
-        <div id="sub" class="w3-bar-block w3-hide">
-            <a href="#information" class="w3-bar-item w3-button w3-round w3-mobile">about</a>
-            <a href="#mix" class="w3-bar-item w3-button w3-round w3-mobile">mix</a>
-            <a href="#form" class="w3-bar-item w3-button w3-round w3-mobile">contatto</a>
-            <a href="#ref" class="w3-bar-item w3-button w3-round w3-mobile">links</a>
-        </div>
-    </header>
-
     <h1>ciao!<br></h1>
-
-    <div class="w3-container">
+    <div id="information" class="w3-display-container">
+        <div class="w3-margin w3-center" style="color: black;">
+            <br>
+            <h5 class="w3-center">I'm Samu</h5>
+            <br>
+            <h5>
+                a <a href="https://www.hslu.ch/de-ch/technik-architektur/studium/bachelor/digital-engineering/"
+                    rel="noreferrer" target="_blank">
+                    Digital Engineer
+                </a>
+            </h5>
+            <h5 class="w3-center">from Switzerland and Italy</h5>
+            <br>
+            <ul>
+                <li>
+                    Send <a title="email" href="mailto:1@unosamuno.ch" rel="noreferrer" target="_blank"><i
+                            class="far fa-envelope"></i></a>
+                </li>
+                <li>
+                    Connect <a title="LinkedIn" href="https://www.linkedin.com/in/samu-huser-276630158/" rel="noreferrer" target="_blank"><i
+                            class="fab fa-linkedin"></i> </a>
+                </li>
+                <li>
+                    Check <a title="GitHub" href="https://github.com/unosamuno" rel="noreferrer" target="_blank"><i
+                            class="fab fa-github"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div id="mix">
         <div class="w3-row w3-black w3-center">
-            <div class="w3-col l4">
-                <div
-                    class="w3-display-container w3-margin-bottom w3-margin-left w3-center w3-small-image-container">
-                    <img src="img/unosamuno.jpg" alt="picture of me" width="900px" height="900px"
-                        class="w3-image w3-margin-top w3-left">
-                    <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">unosamuno</div>
-                </div>
-            </div>
+            <!-- <h2 style="color: rgb(255, 255, 255);">music</h2> -->
+            <br>
+            <button class="w3-button w3-round-xlarge" style="color: white; background-color: rgb(255, 0, 0);" id="on"
+                onclick="playAudio()">PLAY</button>
+            <button class="w3-button w3-round-xlarge" style="color: white; background-color: rgb(0, 0, 255);"
+                onclick="pauseAudio()">PAUSE</button>
+            <br>
+            <br>
+            <canvas id="canvas" width="500" height="400"></canvas>
+            <!-- Credit to Valentino Vivace for track -->
+            <h4>music by Valentino Vivace - Vieni con me</h4>
+            <audio id="mymix" controls="" type="audio/mpeg" src="audio/Valentino Vivace - Vieni con me.mp3"></audio>
 
-            <div id="information" class="w3-col l4 w3-display-container">
-                <div class="w3-margin" style="color: black;">
-                    <h5 class="w3-center">sono unosamuno</h5>
-                    <br>
-                    <h5 class="w3-center">Digital Engineer</h5>
-                    <br><br><br><br><br><br><br><br><br>
-                    <div class="w3-center w3-display-container">
-                        <img src="img/moreAmore.jpeg" alt="moreAmore" class="w3-small-image w3-round">
-                        <!-- <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">motto</div> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-col l4 w3-display-container">
-                <div class="w3-display-container w3-margin-top w3-margin-bottom w3-center w3-right w3-margin-right">
-                    <img src="img/vallapisina.jpg" alt="casa" width="750" height="750" class="w3-image">
-                    <div class="w3-display-bottommiddle w3-small w3-container w3-round w3-black">casa</div>
-                </div>
-            </div>
+            <ul class="links">
+                <li><a title="mixcloud" href="https://www.mixcloud.com/unosamuno" rel="noreferrer"
+                        target="_blank">mixcloud</a>
+                </li>
+                <li><a title="soundcloud" href="https://soundcloud.com/unosamuno" rel="noreferrer"
+                        target="_blank">soundcloud</a></li>
+            </ul>
         </div>
-        <hr>
+    </div>
+    <script src="./js/recordPlayer.js"></script>
 
-        <!-- canvas with vinyl player and audio -->
-        <div class="w3-container w3-row-padding" id="mix">
-            <div class="w3-row w3-center w3-black">
-                <div class="w3-col">
-                    <div class="w3-margin w3-center">
-                        <!-- <h2 style="color: rgb(255, 255, 255);">music</h2> -->
-                        <button class="w3-button w3-green w3-round-xlarge" id="on" onclick="playAudio()">PLAY</button>
-                        <button class="w3-button w3-purple w3-round-xlarge" id="off"
-                            onclick="pauseAudio()">PAUSE</button>
-                        <br>
-                        <br>
-                        <canvas id="canvas" width="500" height="400"></canvas>
-                        <!-- Credit to Valentino Vivace for track -->
-                        <h4>music by Valentino Vivace - Vieni con me</h4>
-                        <audio id="mymix" controls="" type="audio/mpeg"
-                            src="audio/Valentino Vivace - Vieni con me.mp3"></audio>
-                    </div>
-                </div>
-            </div>
+    <footer class="w3-container w3-black">
+        <br>
+        <div class="w3-center w3-display-container">
+            <img src="img/moreAmore.jpeg" alt="moreAmore" style="max-height: 100px; width: auto;"
+                class="w3-small-image w3-round">
+            <!-- <div class="w3-display-bottommiddle w3-container w3-small w3-round w3-black">motto</div> -->
         </div>
-        <script src="./js/recordPlayer.js"></script>
-
-        <hr>
-
-        <div class="w3-container" id="form">
-            <div class="w3-row w3-black">
-                <h2 style="color: rgb(255, 255, 255);">contact</h2>
-                <div id="main" class="w3-container">
-                    <!-- first quarter, empty container -->
-                    <div class="w3-col l2 w3-container"></div>
-                    <!-- second quarter, the form -->
-                    <div class="w3-col l4">
-                        <form name="contactform" method="POST" action="unosamuno.php">
-                            <fieldset class="w3-box w3-margin">
-                                <legend class="w3-purple"><strong>you</strong></legend>
-                                <br>
-                                <label for="name">name: *</label><br>
-                                <input class="w3-round" name="name" v-model="name" /><br>
-                                <br>
-                            </fieldset>
-                            <br>
-                        </form>
-                    </div>
-                    <!-- third quarter, the reaction to the form with vue.js -->
-                    <div class="w3-col l4">
-                        <fieldset class="w3-box w3-margin">
-                            <legend class="w3-green"><strong>me</strong></legend>
-                            <div class="w3-col">
-                                <h3 v-if="name" class="w3-left">
-                                    ciao {{ name }}
-                                </h3>
-                                <p id="quote" v-if="name" class="w3-right">
-                                    <br>
-                                    What you do makes a difference,
-                                    <br>
-                                    and you have to decide,
-                                    <br>
-                                    what kind of difference you want to make.
-                                    <br>
-                                    <span id="author" v-if="name" class="w3-right"> – Dr. Jane Goodall</span>
-                                    <br>
-                                </p>
-                                <br><br><br><br><br>
-                                <h3 v-if="name" class="w3-left w3-center">
-                                    <td>Send me an <a title="email" href="mailto:samuelhuser@unosamuno.ch">Email</a><span
-                                            style="font-size: 25px;"> &#9993;</span></td>
-                                </h3>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <!-- fourth quarter, empty container -->
-                    <div class="w3-col l4 w3-container"></div>
-                </div>
-            </div>
-            <script src="js/bookingForm.js"></script>
+        <div>
+            <h4>Powered by unosamuno &copy; 2024</h4>
         </div>
-
-        <hr>
-
-        <!-- footer with links to cloudstreams and social media -->
-        <footer class="w3-container w3-black">
-            <div id="ref">
-                <h2>links</h2>
-                <ul class="links">
-                    <li><a title="linkedin" href="https://www.linkedin.com/in/samu-huser-276630158/" rel="noreferrer"
-                            target="_blank">linkedin</a></li>
-                    
-                    <li><a title="hslu"
-                            href="https://www.hslu.ch/de-ch/technik-architektur/studium/bachelor/digital-engineering/"
-                            rel="noreferrer" target="_blank">digital engineer</a>
-                    </li>
-                    <li><a title="github" href="https://github.com/unosamuno" rel="noreferrer"
-                            target="_blank">github</a>
-                    </li>
-                    
-                    <li><a title="mixcloud" href="https://www.mixcloud.com/unosamuno" rel="noreferrer"
-                            target="_blank">mixcloud</a>
-                    </li>
-                    <li><a title="soundcloud" href="https://soundcloud.com/unosamuno" rel="noreferrer"
-                            target="_blank">soundcloud</a></li>
-                    
-                    <li><a title="twitter" href="https://twitter.com/unosamuno" rel="noreferrer"
-                            target="_blank">twitter</a>
-                    </li>
-                </ul>
-                <h4>Powered by unosamuno &copy; 2023</h4>
-            </div>
-        </footer>
+    </footer>
 </body>
 
 </html>

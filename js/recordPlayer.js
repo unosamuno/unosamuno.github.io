@@ -14,13 +14,13 @@ function drawVinyl() {
     c.fill();
 
     c.beginPath();//half of the labeling of vinyl
-    c.fillStyle = "#003300"; //dark green
+    c.fillStyle = "#FF0000"; //red
     c.arc(250, 200, 50, 0, Math.PI, false);
     c.fill();
 
     c.beginPath();//half of the labeling of vinyl
     c.arc(250, 200, 50, Math.PI, 2 * Math.PI, false);
-    c.fillStyle = "#391339"; //dark violet
+    c.fillStyle = "#0000FF"; //blue
     c.fill();
 
     c.beginPath();//7-inch line of vinyl
