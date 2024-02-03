@@ -112,25 +112,21 @@ li {
   }
 
   li a {
-	text-decoration: none;
-	color: white; /* Set the color of the links */
+	color: blue; /* Set the color of the links */
 	text-decoration: underline;
   }
 
   /* Style for icons */
   li a i {
 	font-size: 24px;
-	margin-right: 8px; /* Add spacing between the icon and text */
+	margin-right: 5px; /* Add spacing between the icon and text */
 	color: white;
 	margin-right: 20px; /* Add horizontal spacing between the icon and text */
   } 
   .links li {
 	display: inline-block;
-	margin: 0 0.5em;
 	font-size: 16px;
-	font-weight: bold;
-	padding: 20px;
-	text-align: center;
+	margin-right: 20px;
 }
 
 
